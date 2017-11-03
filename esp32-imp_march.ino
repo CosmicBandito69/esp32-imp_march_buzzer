@@ -13,7 +13,8 @@ int buzzerpin = 12;  // gpio of pin buzzer is attached to.
 
 
 // warning, redefines B0 and B1, which I don't know what they were
-// originally defined for.  This little example works, though.
+// originally defined for.  E4 may also be wonky.  Renaming these is probably a good idea.
+// This little example works, though.
 
 // NB: ALL NOTES DEFINED WITH STANDARD ENGLISH NAMES, EXCEPT FROM "A" 
 //THAT IS CALLED WITH THE ITALIAN NAME "LA" BECAUSE A0,A1...ARE THE ANALOG PINS ON ARDUINO.
@@ -119,8 +120,10 @@ int buzzerpin = 12;  // gpio of pin buzzer is attached to.
 #define D8  4698.64
 #define Eb8 4978.03
 // DURATION OF THE NOTES 
-#define BPM 120    //  you can change this value changing all the others
-// tecnically, BPM supposed to be 104 I think, but original sounds good.
+#define BPM 120 //  you can change this value changing all the others
+// I think tecnically BPM supposed to be 104, but original 120
+// from instructable sounds good.  180 sounds speedy, 240 sounds mario, 300 sounds
+// middle eastern, 400 middle eastern techno pop?
 #define H 2*Q //half 2/4
 #define Q 60000/BPM //quarter 1/4 
 #define E Q/2   //eighth 1/8
